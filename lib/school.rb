@@ -7,4 +7,8 @@ class School
     @roster = Hash.new
   end
 
+  def add_student(student, grade)
+    @roster[student] = []
+    @roster[student] << grade
+  end
 end
