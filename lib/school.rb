@@ -4,15 +4,15 @@ class School
 
   def initialize(name)
     @name = name
-    ROSTER = Hash.new
+    @roster = Hash.new
   end
 
   def add_student(student, grade)
-    if ROSTER.include?(grade)
-      ROSTER[grade] << student
+    if @roster.include?(grade)
+      @roster[grade] << student
     else
-      ROSTER[grade] = []
-      ROSTER << student
+      @roster[grade] = []
+      @roster << student
     end
   end
 end
