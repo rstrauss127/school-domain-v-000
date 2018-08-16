@@ -4,7 +4,7 @@ class School
 
   def initialize(name)
     @name = name
-    @roster = Hash.new { |hash, key| hash[key] =  }
+    @roster = Hash.new 
   end
 
 end
